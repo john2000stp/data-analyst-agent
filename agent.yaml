@@ -1,0 +1,25 @@
+spec_version: "0.1.0"
+name: data-analyst-agent
+version: 1.0.0
+description: AI agent that analyzes datasets, generates insights, creates visualizations, and answers data questions using Python and SQL.
+
+model:
+  preferred: claude-sonnet-4-5-20250929
+  fallback:
+    - claude-haiku-4-5-20251001
+  constraints:
+    temperature: 0.2
+    max_tokens: 8192
+
+skills:
+  - data-analysis
+  - sql-query
+  - visualization
+
+tools:
+  - python-exec
+  - csv-reader
+
+runtime:
+  max_turns: 30
+  timeout: 180

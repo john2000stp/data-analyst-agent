@@ -1,0 +1,13 @@
+name: csv-reader
+description: Read and parse CSV files, returning shape, columns, dtypes, and preview rows
+input_schema:
+  type: object
+  properties:
+    file_path:
+      type: string
+      description: Path to the CSV file
+    rows:
+      type: integer
+      description: Number of preview rows to return (default 5)
+  required:
+    - file_path

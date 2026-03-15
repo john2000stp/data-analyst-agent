@@ -5,7 +5,7 @@ AI agent that analyzes datasets, generates insights, creates visualizations, and
 ## Run
 
 ```bash
-npx @open-gitagent/gitagent run -r https://github.com/<username>/data-analyst-agent
+npx @open-gitagent/gitagent run -r https://github.com/john2000stp/data-analyst-agent
 ```
 
 ## What It Can Do
